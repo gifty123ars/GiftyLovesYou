@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Navdeep 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="heartCanvas"></canvas>
+  <div class="box">
+    <h1><span id="typing"></span></h1>
+    <p>This is something made just for you... by someone who adores you a lot 💕</p>
+    <a href="proposal.html" class="btn">Click to Continue</a>
+  </div>
+
+  <script>
+    // Typing effect
+    const text = "Hey Navdeep 👋";
+    let i = 0;
+    const speed = 100;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    typeWriter();
+  </script>
+  <script src="hearts.js"></script>
+</body>
+</html>
